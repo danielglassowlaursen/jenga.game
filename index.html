@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Jenga - Pull the Blocks!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="ui-overlay">
+            <h1>🦁 Animal Jenga 🐘</h1>
+            <div id="score-panel">
+                <div id="score">Blocks Removed: <span id="blocks-removed">0</span></div>
+                <div id="status">Click on a block to pull it!</div>
+            </div>
+            <div id="effect-display"></div>
+            <button id="reset-btn">New Game</button>
+            <div id="instructions">
+                <h3>🎮 How to Play:</h3>
+                <ul>
+                    <li>Click on a block to pull it from the tower</li>
+                    <li>Each animal block has a special effect!</li>
+                    <li>Try to remove as many blocks as possible</li>
+                    <li>Don't let the tower fall!</li>
+                </ul>
+                <h3>🐾 Animal Powers:</h3>
+                <ul>
+                    <li>🐘 <strong>Elephant:</strong> Heavy shake!</li>
+                    <li>🐱 <strong>Cat:</strong> Sneaky - smooth removal</li>
+                    <li>🐉 <strong>Dragon:</strong> Fire blast!</li>
+                    <li>💨 <strong>Cow:</strong> Fart power - blocks wobble!</li>
+                    <li>⚡ <strong>Tiger:</strong> Lightning strike!</li>
+                    <li>🐸 <strong>Frog:</strong> Bouncy blocks!</li>
+                    <li>🦅 <strong>Eagle:</strong> Wind gust!</li>
+                    <li>🐢 <strong>Turtle:</strong> Slow and steady</li>
+                </ul>
+            </div>
+        </div>
+        <canvas id="game-canvas"></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
